@@ -64,6 +64,23 @@
         .logo-links {
             margin-top: 10px;
         }
+
+	/* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .content-wrapper, .footer {
+                width: 95%; /* Increase width on smaller screens */
+            }
+
+            .text-content, .footer {
+                font-size: 18px; /* Smaller font size for mobile */
+            }
+
+            .logo {
+                width: 40px; /* Adjust logo size for mobile */
+                margin-right: 5px;
+            }
+        }
+
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
