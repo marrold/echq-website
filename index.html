@@ -68,33 +68,21 @@
 
 	/* Media Query for Mobile Devices */
         @media (max-width: 768px) {
-
             body, html {
-                height: 100%;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #ffffff; /* Set background color to white */
-                font-family: 'Roboto', sans-serif; /* Roboto font */
+                padding-top: 20px; /* Reduced padding */
+                justify-content: flex-start; /* Align content to the top */
             }
 
-
-	    .content-wrapper, .footer {
+            .content-wrapper, .footer {
                 width: 95%; /* Increase width on smaller screens */
             }
 
-            .text-content {
-                font-size: 12px; /* Smaller font size for mobile */
-            }
-
-            .footer {
-                font-size: 10px; /* Smaller font size for mobile */
+            .text-content, .footer {
+                font-size: 14px; /* Adjusted font size for readability */
             }
 
             .logo {
-                width: 60px; /* Adjust logo size for mobile */
+                width: 40px; /* Adjust logo size for mobile */
                 margin-right: 5px;
             }
         }
