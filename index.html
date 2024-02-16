@@ -81,12 +81,28 @@
 
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
-            .content-wrapper, .footer {
+
+            body, html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffffff; /* Set background color to white */
+                font-family: 'Roboto', sans-serif; /* Roboto font */
+            }
+
+	    .content-wrapper, .footer {
                 width: 95%; /* Increase width on smaller screens */
             }
 
-            .text-content, .footer {
+            .text-content {
                 font-size: 18px; /* Smaller font size for mobile */
+            }
+
+	    .footer {
+                font-size: 8px; /* Smaller font size for mobile */
             }
 
             .logo {
