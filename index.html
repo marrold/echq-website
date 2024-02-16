@@ -15,7 +15,7 @@
             background-color: #ffffff; /* Set background color to white */
             font-family: 'Roboto', sans-serif; /* Roboto font */
             padding-top: 50px;
-	}
+        }
 
         .content-wrapper {
             width: 60%; /* Adjust the size of the image and text container */
@@ -55,6 +55,19 @@
             margin-right: auto; /* Center the footer */
         }
 
+        .logo-link-item {
+            display: flex;
+            align-items: center; /* Center align vertically */
+            margin-bottom: 10px; /* Space between items */
+        }
+
+        .logo-link-item a {
+            display: flex;
+            align-items: center; /* Ensures text aligns with the logo */
+            text-decoration: none; /* Optional: removes underline from links */
+            color: inherit; /* Inherits the text color */
+        }
+
         .logo {
             vertical-align: middle;
             margin-right: 10px;
@@ -66,27 +79,21 @@
             margin-top: 10px;
         }
 
-	/* Media Query for Mobile Devices */
+        /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
-            body, html {
-                padding-top: 20px; /* Reduced padding */
-                justify-content: flex-start; /* Align content to the top */
-            }
-
             .content-wrapper, .footer {
                 width: 95%; /* Increase width on smaller screens */
             }
 
             .text-content, .footer {
-                font-size: 14px; /* Adjusted font size for readability */
+                font-size: 18px; /* Smaller font size for mobile */
             }
 
             .logo {
-                width: 40px; /* Adjust logo size for mobile */
+                width: 60px; /* Adjust logo size for mobile */
                 margin-right: 5px;
             }
         }
-
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
@@ -96,17 +103,32 @@
             <img src="echq.png" alt="EMF Communications Headquarters Logo">
         </div>
         <div class="text-content">
-            Hello, We're the EMF Communications Headquarters, a communications focused village at <a href="https://www.emfcamp.org/">Electromagnetic Field Festival</a>.<br><br>
+            Hello, we're the EMF Communications Headquarters, a communications focused village at <a href="https://www.emfcamp.org/">Electromagnetic Field Festival</a>.<br><br>
             We're home to:
             <div class="logo-links">
-                <a href="https://emfhams.org/"><img src="emfhams.png" alt="EMF Hams Logo" class="logo">The EMF Hams - An Amateur Radio Club</a><br>
-		<a href="https://mastcar.uk/"><img src="mastcar.png" alt="MastCar Logo" class="logo">MastCar - An Amateur Radio Tactical Response Vehicle</a><br>
-		<a href="https://cutel.net/"><img src="cutel.png" alt="CuTEL Logo" class="logo">CuTEL - A Premium Telecoms Provider</a>
+                <div class="logo-link-item">
+                    <a href="https://emfhams.org/">
+                        <img src="emfhams.png" alt="EMF Hams Logo" class="logo">
+                        The EMF Hams - An Amateur Radio Club
+                    </a>
+                </div>
+                <div class="logo-link-item">
+                    <a href="https://mastcar.uk/">
+                        <img src="mastcar.png" alt="MastCar Logo" class="logo">
+                        MastCar - An Amateur Radio Tactical Response Vehicle
+                    </a>
+                </div>
+                <div class="logo-link-item">
+                    <a href="https://cutel.net/">
+                        <img src="cutel.png" alt="CuTEL Logo" class="logo">
+                        CuTEL - A Premium Telecoms Provider
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        N.B: EMF Communications Headquarters is not affiliated with EMF FESTIVALS LTD, or any Communications Headquarters of a similar name. Any likeness to exiting logos is a parody.
+        N.B: EMF Communications Headquarters is not affiliated with EMF FESTIVALS LTD, or any Communications Headquarters of a similar name. Any likeness to existing logos is a parody.
     </div>
 </body>
 </html>
